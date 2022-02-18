@@ -11,7 +11,7 @@ public class MyDbContext : DbContext
     {
     }
 
-    public DbSet<MyEntity> MyEntity { get; set; }
+    public DbSet<MyEntity>? MyEntity { get; set; }
     public string ShadowKeyValueOnGenerate { get; set; } = "";
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
